@@ -6,7 +6,7 @@ import './App.css'
 // imports
 
 import NavBar from './components/NavBar/NavBar';
-import About from './components/About/AboutMe';
+import About from './components/About/About';
 import Spotlight from './components/Spotlight/Spotlight';
 import EngProjects from './components/Projects/EngProjects';
 import PrdProjects from './components/Projects/PrdProjects';
@@ -30,9 +30,9 @@ function App() {
         <Resume />
         <Contact />
       </main>
-      <Routes>
+      {/* <Routes>
         <Route path="/" element={<main><h2>TLDR</h2></main>} />
-      </Routes>
+      </Routes> */}
     </>
   )
 };
