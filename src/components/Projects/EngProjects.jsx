@@ -1,22 +1,18 @@
-const highlights = [
-  {
-    title: 'Truss',
-    description: 'Led multi-department civic tech collaborations with the US Government.',
-  },
-  {
-    title: 'Shopify',
-    description: 'Recovered $4.2M+ in potential losses by solving retention weaknesses.',
-  },
+import './Projects.css'
+
+const projects = [
+  { name: 'RippleSearch', description: 'Filterable external API search with bookmarking.' },
+  { name: 'SkillSwap', description: 'Modular React app for community skill trading.' },
 ];
 
-export default function Spotlight() {
+export default function Projects() {
   return (
-    <section className="px-6 py-12">
-      <h2 className="text-2xl font-bold mb-6">Spotlight Experience</h2>
-      <div className="grid gap-6">
-        {highlights.map(({ title, description }) => (
-          <div key={title} className="border p-4 rounded shadow">
-            <h3 className="text-xl font-semibold">{title}</h3>
+    <section className="projects">
+      <h2 className="projects h2">Projects</h2>
+      <div className="project-grid">
+        {projects.map(({ name, description }) => (
+          <div key={name} className="project-card">
+            <h3 className="text-xl font-semibold">{name}</h3>
             <p>{description}</p>
           </div>
         ))}

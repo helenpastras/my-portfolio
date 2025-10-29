@@ -1,3 +1,5 @@
+import './Spotlight.css'
+
 const highlights = [
   {
     title: 'Truss',
@@ -11,11 +13,11 @@ const highlights = [
 
 export default function Spotlight() {
   return (
-    <section className="px-6 py-12">
+    <section className="spotlight">
       <h2 className="text-2xl font-bold mb-6">Spotlight Experience</h2>
       <div className="grid gap-6">
         {highlights.map(({ title, description }) => (
-          <div key={title} className="border p-4 rounded shadow">
+          <div key={title} className="spotlight-card">
             <h3 className="text-xl font-semibold">{title}</h3>
             <p>{description}</p>
           </div>
