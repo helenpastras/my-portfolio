@@ -1,18 +1,24 @@
-.spotlight {
+.spotlight-section {
   padding: 4rem 2rem;
+  background-color: #fdfdfd;
 }
 
-.spotlight h2 {
+.spotlight-heading {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 2rem;
+}
+
+.spotlight-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .spotlight-card {
   background: white;
   border: 1px solid #eee;
   padding: 1.5rem;
-  margin-bottom: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.05);
 }

@@ -14,8 +14,8 @@ const highlights = [
 export default function Spotlight() {
   return (
     <section className="spotlight">
-      <h2 className="text-2xl font-bold mb-6">Spotlight Experience</h2>
-      <div className="grid gap-6">
+      <h2 className="spotlight-heading">Spotlight Experience</h2>
+      <div className="spotlight-grid">
         {highlights.map(({ title, description }) => (
           <div key={title} className="spotlight-card">
             <h3 className="text-xl font-semibold">{title}</h3>
